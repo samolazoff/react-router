@@ -1,0 +1,21 @@
+.navbar{
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    color: red;
+}
+.navbar-items{
+    justify-content: flex-end;
+    gap: 25px;
+}
+.navbar-items .item{
+    font-size: 24px;
+}
+.navbar-items .item:hover{
+    color:white
+}
