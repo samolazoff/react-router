@@ -19,3 +19,7 @@
 .navbar-items .item:hover{
     color:white
 }
+.active-item{
+    color: blue;
+    cursor: default;
+}
