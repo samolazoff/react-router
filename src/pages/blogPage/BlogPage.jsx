@@ -4,8 +4,8 @@ import './blogPage.css';
 
 const BlogPage = () => {
     return (
-        <section >
-            
+        <section className='cont'>
+            <h2 className="title-block">Posts</h2>
         </section>
     );
 };

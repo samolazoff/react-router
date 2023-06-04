@@ -3,7 +3,7 @@ import './homePage.css'
 const HomePage = () => {
     return (
         <section className='cont'>
-            <h2 className="tittle-block">Home</h2>
+            <h2 className="title-block">Home</h2>
         </section>
     );
 };

@@ -1,22 +1,24 @@
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
-import Navbar from './components/navbar/Navbar';
-import FooterApp from './components/footer/FooterApp'
+import Layout from './components/layout/Layout';
+import AboutPage from './pages/aboutPage/AboutPage';
+import BlogPage from './pages/blogPage/BlogPage';
+import HomePage from './pages/homePage/HomePage';
+import NotFoundPage from './pages/notFoundPage/NotFoundPage';
 
 import './App.css';
 
 function App() {
     return (
         <>
-            <header className='app-header'>
-                <Navbar></Navbar>
-            </header>
-            <main className='app-main'>
-
-            </main>
-            <footer className='app-footer'>
-                <FooterApp></FooterApp>
-            </footer>
+            <Routes>
+                <Route path='/' element={<Layout></Layout>}>
+                    <Route index element={<HomePage></HomePage>}></Route>
+                    <Route path='posts' element={<BlogPage></BlogPage>}></Route>
+                    <Route path='about' element={<AboutPage></AboutPage>}></Route>
+                    <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
+                </Route>
+            </Routes>
         </>
     );
 }

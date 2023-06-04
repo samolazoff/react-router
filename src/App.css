@@ -25,6 +25,7 @@ a{
     background-color: lightgreen;
 }
 .title-block{
+    margin: 25px 0;
     font-size: 32px;
 }
 .app-main{
